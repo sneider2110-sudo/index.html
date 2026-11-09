@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SIVEWEB · Blog del PPI</title>
+<style>
+:root{--g:#3f444c;--o:#7b8390;--nb:#3f444c;--bg:#f3f4f6;--fg:#1f2328;--card:#fff;--bd:#d1d5db;--mut:#5b6270;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--g:#c3c8d0;--o:#9aa1ab;--nb:#2b2f36;--bg:#15171a;--fg:#e8eaed;--card:#1e2125;--bd:#363a41;--mut:#a0a6af;color-scheme:dark}}
+:root[data-theme="dark"]{--g:#c3c8d0;--o:#9aa1ab;--nb:#2b2f36;--bg:#15171a;--fg:#e8eaed;--card:#1e2125;--bd:#363a41;--mut:#a0a6af;color-scheme:dark}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.7 Georgia,"Times New Roman",serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--nb);z-index:10}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--nb);display:flex;gap:2px;overflow-x:auto;padding:0 8px;font:600 14px system-ui,Arial,sans-serif}
+nav a{color:#fff;text-decoration:none;padding:14px 12px;white-space:nowrap;border-bottom:3px solid transparent}
+nav a:hover,nav a.on{border-bottom-color:#fff}
+nav a:focus-visible,a:focus-visible{outline:3px solid var(--o);outline-offset:-3px}
+main{max-width:860px;margin:0 auto;padding:28px 18px 60px}
+h1,h2,h3{font-family:system-ui,Arial,sans-serif;line-height:1.25;color:var(--g)}
+h1{font-size:2.1rem;margin:.2em 0}h2{font-size:1.6rem;margin:0 0 .6em}h3{font-size:1.15rem;margin:1.6em 0 .4em}
+section{display:none}section.on{display:block}
+.hero{border-left:8px solid var(--o);padding:8px 0 8px 18px;margin-bottom:24px}
+.hero p{margin:.2em 0}.sub{color:var(--mut);font-family:system-ui,Arial,sans-serif}
+.box{background:var(--card);border:1px solid var(--bd);border-radius:6px;padding:12px 16px;margin:16px 0}
+.q{border-left:5px solid var(--o);background:var(--card);padding:10px 16px;margin:20px 0;font-style:italic}
+.tw{overflow-x:auto;margin:14px 0}
+table{border-collapse:collapse;width:100%;min-width:560px;font:14.5px/1.5 system-ui,Arial,sans-serif;background:var(--card)}
+th,td{border:1px solid var(--bd);padding:8px 10px;text-align:left;vertical-align:top}
+th{background:var(--nb);color:#fff}
+.org{display:flex;flex-direction:column;align-items:center;gap:10px;font:14px system-ui,Arial,sans-serif;margin:16px 0}
+.org div{border:2px solid var(--g);background:var(--card);border-radius:6px;padding:8px 12px;text-align:center}
+.org .r{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.org .top{background:var(--nb);color:#fff}
+.fn{border:1px solid var(--bd);background:var(--card);border-radius:6px;padding:4px 16px 14px;margin:22px 0}
+.fn svg{max-width:100%;height:auto;display:block;margin:10px auto}
+.fn dl{display:grid;grid-template-columns:120px 1fr;gap:4px 12px;font:15px/1.5 system-ui,Arial,sans-serif}
+.fn dt{font-weight:700;color:var(--g)}.fn dd{margin:0}
+@media(max-width:560px){.fn dl{grid-template-columns:1fr}body{font-size:16px}}
+.ref{padding-left:2em;text-indent:-2em;margin:.7em 0}
+footer{text-align:center;color:var(--mut);font:13px system-ui,Arial,sans-serif;padding:24px}
+</style></head><body>
+<nav id="m"><a href="#c1">1. Identidad</a><a href="#c2">2. Contexto</a><a href="#c3">3. Planteamiento</a><a href="#c4">4. Organización</a><a href="#c5">5. Propuesta</a><a href="#c6">6. Algoritmos</a><a href="#c7">7. Referencias</a></nav>
+<main>
+
+<section id="c1"><div class="hero"><p class="sub">Proyecto Pedagógico Integrador · Segundo semestre</p><h1>SIVEWEB</h1><p><strong>Sistema de información web para la gestión de ventas y envíos del fruver TierraMái</strong></p></div>
+<h2>Identidad y presentación</h2>
+<p>Este blog documenta el proceso de diseño de SIVEWEB, un sistema web que apoyaría la toma de pedidos, el alistamiento y el seguimiento de los envíos a domicilio de TierraMái, un fruver ficticio del Valle de Aburrá. Cada capítulo del menú corresponde a un apartado del PPI.</p>
+<div class="box"><strong>Equipo</strong><br>Joel Berrueta · Samuel García · Sneyder De la Hoz<br><strong>Docente:</strong> <br><strong>Programa:</strong> Técnico Profesional en Sistemas · Facultad de Ingeniería · Área Informática<br><strong>Institución:</strong> Tecnológico de Antioquia Institución Universitaria</div>
+<h3>Historial de cambios</h3>
+<div class="tw"><table><tr><th>Versión</th><th>Fecha</th><th>Descripción del cambio</th><th>Responsable</th></tr>
+<tr><td>1.0</td><td>13/10/2026</td><td>Primer contacto con la plantilla del segundo semestre</td><td>Joel, Sneyder, Samuel</td></tr>
+<tr><td>2.0</td><td>15/10/2026</td><td>Actualización de la plantilla con temas vistos en clase (secciones 1 y 2)</td><td>Joel, Sneyder, Samuel</td></tr>
+<tr><td>3.0</td><td>08/11/2026</td><td>Primera versión del blog con los siete capítulos</td><td>Equipo</td></tr></table></div>
+</section>
+
+<section id="c2"><h2>Contexto del proyecto</h2>
+<p>Para construir una solución útil primero hay que entender el entorno donde operará.</p>
+<h3>Nombre del proyecto</h3><p>Sistema de información web para la gestión de ventas y envíos del fruver TierraMái.</p>
+<h3>Nombre del sistema</h3><p><strong>SIVEWEB</strong> (Sistema de Información de Ventas y Envíos Web).</p>
+<h3>Antecedentes de la organización</h3>
+<p>TierraMái comercializa al por menor frutas, verduras y abarrotes, con venta en punto y pedidos a domicilio. Es del sector terciario (comercio) y se ubica en la clase CIIU 4721 (DANE, 2012). Sus áreas son gerencia, compras, ventas y atención, logística y envíos, y finanzas. Opera en el Valle de Aburrá.</p>
+<p>Usa redes sociales y WhatsApp para recibir pedidos, facturación digital, SIESA para ventas que no son domicilios, y Excel o cuadernos para clientes y domicilios. No tiene un sistema que integre pedido, alistamiento y seguimiento del envío.</p>
+<h3>Antecedentes del sistema</h3>
+<div class="box">Esta tabla está pendiente de completar: la guía pide sistemas similares con máximo 5 años de antigüedad y fuentes verificadas, y aún no se han consultado.</div>
+<div class="tw"><table><tr><th>Autor/Entidad y año</th><th>Sistema</th><th>Ventajas</th><th>Desventajas</th><th>Fuente</th></tr>
+<tr><td>Por completar</td><td>Tienda web con carrito (ej. Shopify, mencionado en entrevistas)</td><td>Por completar</td><td>Por completar</td><td>Por completar (APA)</td></tr>
+<tr><td>Por completar</td><td>Software administrativo (ej. Siesa, usado hoy por TierraMái)</td><td>Por completar</td><td>Por completar</td><td>Por completar (APA)</td></tr></table></div>
+<h3>Cronograma</h3>
+<div class="tw"><table><tr><th>Fase</th><th>Actividad</th><th>Plazo</th><th>Responsables</th></tr>
+<tr><td>1</td><td>Plantilla del PPI y análisis de la organización</td><td>13 al 15/10/2026</td><td>Joel, Sneyder, Samuel</td></tr>
+<tr><td>2</td><td>Entrevistas a nueve personas de TropiExpress y Fruttivos</td><td>18 y 19/10/2026</td><td>Equipo</td></tr>
+<tr><td>3</td><td>Necesidades y requisitos funcionales y no funcionales</td><td>Octubre 2026</td><td>Equipo</td></tr>
+<tr><td>4</td><td>Representación de requisitos en un lenguaje de programación</td><td>Por definir</td><td>Por definir</td></tr></table></div>
+<div class="q">¿Por qué es indispensable conocer soluciones previas antes de proponer un nuevo desarrollo de software?</div><div class="box"><strong>Nuestra respuesta.</strong> Porque permite aprovechar lo que ya funciona, evitar errores que otros ya cometieron y no repetir un sistema que ya existe. Así la propuesta se ajusta a necesidades reales y no se gasta tiempo en reinventar lo que ya está resuelto.</div></section>
+
+<section id="c3"><h2>Planteamiento del proyecto</h2>
+<h3>Justificación</h3>
+<p>En Colombia se pierde o desperdicia el 34 % de la oferta de alimentos, y el 62 % de ese total son frutas y verduras (DNP, 2024). En un fruver, atender los pedidos con orden ayuda a reducir pérdidas. Hoy los pedidos por WhatsApp se pierden en la lista, el cliente debe preguntar por su pedido y los rótulos se escriben a mano. Resolverlo mejora la exactitud y la visibilidad del servicio, y el equipo practica levantamiento de requisitos, modelado de procesos y lógica de programación.</p>
+<h3>Objetivo general</h3>
+<p>Diseñar un sistema de información web para gestionar las ventas y los envíos a domicilio de TierraMái, con el fin de reducir errores y retrasos y dar al cliente visibilidad del estado de su pedido.</p>
+<h3>Objetivos específicos</h3>
+<ol><li>Describir el proceso actual de ventas y envíos con BPMN 2.0 y analizar sus causas con un diagrama de Ishikawa.</li>
+<li>Documentar las necesidades de los stakeholders con nueve entrevistas, priorizadas con MoSCoW.</li>
+<li>Especificar los requisitos funcionales y no funcionales con criterios de aceptación verificables.</li>
+<li>Representar cinco funciones del sistema con diagramas de flujo y casos de prueba.</li></ol>
+<h3>Alcance</h3>
+<p><strong>El sistema hará:</strong> registro de clientes, catálogo, carrito, pedidos con datos de entrega, confirmación y método de pago, alistamiento, agrupación por zona y guía de despacho, entrega por el domiciliario, seguimiento y notificaciones.</p>
+<p><strong>No hará en este semestre (Won’t have):</strong> conexión con Siesa y Shopify, cálculo del costo del domicilio y optimización de rutas, y factura electrónica, porque exceden el tiempo y los conocimientos del semestre. Las calificaciones y los reportes de ventas son deseables para una etapa posterior.</p>
+<h3>Metodología</h3>
+<ol><li><strong>Contexto:</strong> análisis de la organización. Evidencia: Capítulos 2 y 4.</li><li><strong>Proceso actual:</strong> BPMN e Ishikawa. Evidencia: diagramas.</li><li><strong>Entrevistas:</strong> nueve personas, dos comercios reales. Evidencia: transcripciones.</li><li><strong>Requisitos:</strong> fichas con criterios Dado/Cuando/Entonces y matriz de trazabilidad.</li><li><strong>Algoritmos:</strong> diagramas de flujo y casos de prueba.</li></ol>
+<div class="q">¿Cómo influye una mala delimitación del alcance en el fracaso de un proyecto de software?</div><div class="box"><strong>Nuestra respuesta.</strong> Sin un alcance claro se piden funciones nuevas sin parar y el equipo se dispersa. Eso causa retrasos, sobrecostos y un producto incompleto. Por eso en SIVEWEB dejamos como «Won’t have» la conexión con Siesa y Shopify, el cálculo del costo del domicilio y la factura electrónica.</div></section>
+
+<section id="c4"><h2>Descripción de la organización</h2>
+<p><strong>Razón social:</strong> TierraMái, empresa ficticia. <strong>Ubicación:</strong> área metropolitana del Valle de Aburrá, Antioquia (sin dirección específica por ser ficticia).</p>
+<h3>Organigrama</h3>
+<div class="org" role="img" aria-label="Organigrama: gerencia general; compras, ventas, logística y finanzas"><div class="top">Gerencia general</div><div class="r"><div>Compras y abastecimiento</div><div>Ventas y atención al cliente</div><div>Logística y envíos</div><div>Finanzas y administración</div></div></div>
+<h3>Áreas y funciones</h3>
+<ul><li><strong>Gerencia general:</strong> liderazgo estratégico, negociación con proveedores y planeación del crecimiento.</li><li><strong>Compras y abastecimiento:</strong> proveedores, recepción, calidad y rotación de perecederos.</li><li><strong>Ventas y atención al cliente:</strong> pedidos por WhatsApp y redes, y registro de clientes.</li><li><strong>Logística y envíos:</strong> alistamiento, despachos, guías y rutas.</li><li><strong>Finanzas y administración:</strong> contabilidad, pagos, liquidación diaria y flujo de caja.</li></ul>
+<h3>Misión</h3><p>Ofrecer frutas, verduras y abarrotes frescos y de calidad a las familias de la comunidad, con proveedores y productores, a precios justos y con un servicio cercano y responsable.</p>
+<h3>Visión</h3><p>Para 2031, ser un fruver reconocido en el Valle de Aburrá por la frescura, el servicio cercano y el compromiso con productores locales y el medio ambiente.</p>
+<div class="box"><strong>Nota metodológica.</strong> TierraMái es ficticia: la misión, la visión y el organigrama fueron elaborados por el equipo a partir de las características de un fruver. Los datos de operación real vienen de entrevistas a TropiExpress y Fruttivos. No existe dirección ni información oficial de la empresa.</div>
+<div class="q">¿De qué manera el conocimiento del organigrama facilita la identificación de los futuros usuarios del sistema de información?</div><div class="box"><strong>Nuestra respuesta.</strong> El organigrama muestra qué áreas hacen cada tarea y quién la hace. Así se identifica quién usará el sistema (ventas, logística, finanzas, gerencia) y qué necesita cada uno. En TierraMái, ventas toma los pedidos y logística los despacha, y por eso hay roles de encargado y domiciliario.</div></section>
+
+<section id="c5"><h2>Propuesta del sistema</h2>
+<div class="box">El sistema está en fase de diseño y propuesta: hay especificaciones, no un producto implementado.</div>
+<h3>Descripción del problema</h3>
+<p>Los pedidos se retrasan, se registran con errores y el cliente no ve el estado de su envío. Causas: pedidos solo por WhatsApp sin formato, datos en Excel y cuadernos, rótulos a mano, rutas sin planificar y disponibilidad confirmada de forma verbal. Consecuencias: pedidos perdidos, cruces en el pago, reprocesos y clientes que deben escribir de nuevo para saber de su pedido.</p>
+<h3>Sistema propuesto</h3>
+<p>SIVEWEB es una web adaptable a celular para el cliente, el encargado de pedidos, el domiciliario y el dueño. El cliente se registra una vez, arma su carrito y consulta el estado; el encargado alista y agrupa por zona; el domiciliario ve sus entregas y las marca con foto. Se espera menos errores, más claridad del estado y datos centralizados.</p>
+<h3>Funciones del sistema</h3>
+<div class="tw"><table><tr><th>ID</th><th>Función</th><th>Descripción</th><th>Usuario</th><th>Resultado esperado</th></tr>
+<tr><td>F01</td><td>Registro e inicio de sesión</td><td>Registro único con datos de entrega e ingreso según rol</td><td>Cliente</td><td>Cuenta creada y datos reutilizados</td></tr>
+<tr><td>F02</td><td>Catálogo con filtros</td><td>Productos con foto, precio, unidad y disponibilidad; filtro por categoría y búsqueda</td><td>Cliente</td><td>Cliente ve qué hay y a qué precio</td></tr>
+<tr><td>F03</td><td>Gestión del catálogo y agotados</td><td>Crear, editar o inactivar productos y marcarlos agotados</td><td>Encargado</td><td>Catálogo actualizado</td></tr>
+<tr><td>F04</td><td>Carrito de compras</td><td>Agregar productos con cantidad, maduración y marca; total automático</td><td>Cliente</td><td>Total correcto</td></tr>
+<tr><td>F05</td><td>Registro del pedido</td><td>Crear el pedido con datos de entrega y número único</td><td>Cliente, encargado</td><td>Pedido en estado Pendiente</td></tr>
+<tr><td>F06</td><td>Confirmación y pago</td><td>Confirmar con botón y registrar el método de pago real</td><td>Encargado</td><td>Pedido confirmado sin cruces de pago</td></tr>
+<tr><td>F07</td><td>Alistamiento y novedades</td><td>Lista de pedidos del más antiguo al más reciente; registrar faltantes</td><td>Encargado</td><td>Pedido listo o retenido con motivo</td></tr>
+<tr><td>F08</td><td>Zona y guía de despacho</td><td>Agrupar por zona, asignar domiciliario y generar guía</td><td>Encargado</td><td>Pedidos “En camino” con guía</td></tr>
+<tr><td>F09</td><td>Seguimiento del pedido</td><td>Estado, historial y datos del domiciliario; solo transiciones válidas</td><td>Cliente</td><td>Cliente informado sin escribir</td></tr>
+<tr><td>F10</td><td>Entrega por el domiciliario</td><td>Ver entregas asignadas y marcar “Entregado” con foto o novedad</td><td>Domiciliario</td><td>Entrega registrada con evidencia</td></tr></table></div>
+<h3>Recursos técnicos</h3>
+<ul><li>Analista de requisitos y modelador de procesos.</li><li>Desarrollador web (interfaz, lógica y base de datos).</li><li>Responsable de pruebas y de documentación.</li><li>Conocimientos: BPMN, requisitos, lógica de programación, bases de datos y seguridad básica.</li></ul>
+<h3>Recursos tecnológicos (propuesta)</h3>
+<ul><li><strong>Hardware:</strong> computadores del equipo y celulares Android e iOS para pruebas.</li><li><strong>Software:</strong> navegadores recientes, control de versiones, base de datos central y herramienta de diagramas.</li><li><strong>Servicios:</strong> alojamiento web con HTTPS y pasarela de pagos externa (el sistema no guarda datos de tarjetas).</li></ul>
+<div class="q">¿Qué diferencia existe entre un requerimiento funcional y un recurso tecnológico dentro del diseño de software?</div><div class="box"><strong>Nuestra respuesta.</strong> El requerimiento funcional dice qué debe hacer el sistema, por ejemplo «registrar un pedido con datos de entrega». El recurso tecnológico es con qué se construye y se ejecuta, como el hardware, el software, la base de datos o el servicio de alojamiento.</div></section>
+
+<section id="c6"><h2>Representación algorítmica</h2>
+<p>Cinco funciones de SIVEWEB representadas con diagramas de flujo y un caso de prueba cada una. Los diagramas son del equipo.</p>
+<div id="fx"></div>
+<div class="q">¿Cómo ayuda un caso de prueba a detectar errores de lógica antes de escribir código fuente?</div><div class="box"><strong>Nuestra respuesta.</strong> Se prueba el diagrama de flujo con valores concretos y se compara el resultado con el esperado. Si no coincide, hay un error en la lógica. Por ejemplo, en el carrito, 2 kg de mango y 1,5 kg de tomate deben dar $19.300; si el diagrama da otro valor, se corrige antes de programar.</div></section>
+
+<section id="c7"><h2>Referencias y créditos</h2>
+<h3>Referencias bibliográficas</h3>
+<p class="ref">Bjarnason, E., Unterkalmsteiner, M., Borg, M., &amp; Engström, E. (2016). A multi-case study of agile requirements engineering and the use of test cases as requirements. <i>Information and Software Technology, 77</i>, 61–79. https://doi.org/10.1016/j.infsof.2016.03.008</p>
+<p class="ref">Clegg, D., &amp; Barker, R. (1994). <i>Case method fast-track: A RAD approach</i>. Addison-Wesley.</p>
+<p class="ref">Congreso de la República de Colombia. (2012, 17 de octubre). <i>Ley Estatutaria 1581 de 2012</i>. Diario Oficial n.º 48.587. http://www.secretariasenado.gov.co/senado/basedoc/ley_1581_2012.html</p>
+<p class="ref">Departamento Administrativo Nacional de Estadística. (2012). <i>Clasificación industrial internacional uniforme de todas las actividades económicas: CIIU Revisión 4 adaptada para Colombia</i>. https://www.antioquia.gov.co/images/pdf/SEMECO/CIIU_Rev4ac.pdf</p>
+<p class="ref">Departamento Nacional de Planeación. (2024, 19 de diciembre). <i>El DNP se une con las centrales de abastos para fortalecer los procesos logísticos y la reducción de pérdida de alimentos</i> [Noticia]. https://dnp.gov.co</p>
+<p class="ref">Franch, X. (2021). Data-driven requirements engineering: A guided tour. En <i>Communications in Computer and Information Science</i> (Vol. 1375, pp. 83–105). Springer. https://doi.org/10.1007/978-3-030-70006-5_4</p>
+<p class="ref">Fumero, A. (2005). Un tutorial sobre blogs. El abecé del universo blog. <i>Telos</i>, (65), 46–59.</p>
+<p class="ref">Gotel, O. C. Z., &amp; Finkelstein, C. W. (1994). An analysis of the requirements traceability problem. En <i>Proceedings of the First International Conference on Requirements Engineering</i> (pp. 94–101). IEEE. https://doi.org/10.1109/ICRE.1994.292398</p>
+<p class="ref">Ishikawa, K. (1986). <i>Guide to quality control</i> (2.ª ed. rev.). Asian Productivity Organization.</p>
+<p class="ref">Object Management Group. (2011). <i>Business process model and notation (BPMN)</i> (Versión 2.0). https://www.omg.org/spec/BPMN/2.0/</p>
+<p class="ref">OWASP Foundation. (2021). <i>OWASP Top 10:2021</i>. https://owasp.org/Top10/</p>
+<p class="ref">Wei, J., Courbis, A.-L., Lambolais, T., Xu, B., Bernard, P. L., &amp; Dray, G. (2022). <i>Towards a data-driven requirements engineering approach: Automatic analysis of user reviews</i> [Preprint]. arXiv. https://arxiv.org/abs/2206.14669</p>
+<h3>Créditos y enlaces</h3>
+<p>Organigrama, diagramas de flujo y tablas: elaboración propia del equipo. No se usan imágenes externas. Entrevistas: personas de TropiExpress y Fruttivos, usadas solo con fines académicos.</p></section>
+</main>
+<footer>SIVEWEB · Tecnológico de Antioquia Institución Universitaria</footer>
+<script>
+var F=[
+{n:"F01. Inicio de sesión",p:"Permitir el ingreso según el rol sin revelar qué dato falló.",i:"Correo y contraseña.",pr:"Compara con los datos guardados; si no coinciden, rechaza con mensaje genérico.",o:"Panel del rol o mensaje “Datos incorrectos”.",t:"Entrada: correo registrado con contraseña errónea → Salida: “Datos incorrectos” (no dice cuál falló).",s:[["s","Inicio"],["io","Leer correo y|contraseña"],["d","¿Credenciales|válidas?","Mostrar “Datos|incorrectos”"],["p","Cargar perfil|según el rol"],["io","Mostrar panel"],["e","Fin"]]},
+{n:"F04. Cálculo del total del carrito",p:"Calcular el total a pagar de los productos elegidos.",i:"Lista de productos con cantidad y precio unitario.",pr:"Si no hay productos, total 0. Si hay, suma cantidad × precio de cada línea.",o:"Total del carrito.",t:"2 kg de mango a $6.500 y 1,5 kg de tomate a $4.200 → 13.000 + 6.300 = $19.300.",s:[["s","Inicio"],["io","Leer productos|(cantidad y precio)"],["d","¿Hay productos?","Total = $0"],["p","total = suma de|cantidad × precio"],["io","Mostrar total"],["e","Fin"]]},
+{n:"F05. Registro del pedido",p:"Crear el pedido a partir del carrito con datos de entrega completos.",i:"Carrito, nombre, teléfono, dirección y observaciones.",pr:"Verifica que el carrito tenga productos y que dirección y teléfono estén completos; luego asigna número y estado Pendiente.",o:"Pedido creado con número, o aviso de lo que falta.",t:"Carrito vacío → “El carrito está vacío”. Carrito con productos y datos completos → pedido con estado Pendiente.",s:[["s","Inicio"],["io","Leer carrito y|datos de entrega"],["d","¿Carrito vacío?","Rechazar: carrito|vacío"],["d","¿Dirección y teléfono|completos?","Pedir completar|los datos"],["p","Crear pedido con|número y Pendiente"],["io","Mostrar número"],["e","Fin"]]},
+{n:"F07. Lista de pedidos para alistar",p:"Mostrar al encargado los pedidos nuevos del más antiguo al más reciente.",i:"Pedidos nuevos con su hora de llegada.",pr:"Si no hay pedidos, informa lista vacía; si hay, los ordena por hora de llegada.",o:"Lista ordenada.",t:"Pedidos a las 8:00, 6:00 y 7:30 → lista 6:00, 7:30, 8:00.",s:[["s","Inicio"],["io","Leer pedidos nuevos|y hora de llegada"],["d","¿Hay pedidos?","Mostrar lista|vacía"],["p","Ordenar de más|antiguo a más reciente"],["io","Mostrar lista"],["e","Fin"]]},
+{n:"F09. Validar cambio de estado",p:"Permitir solo cambios de estado válidos del pedido.",i:"Estado actual y estado solicitado.",pr:"Comprueba que el cambio esté en el flujo Pendiente → En preparación → Listo para despacho → En camino → Entregado; si es válido, lo guarda con fecha y hora.",o:"Estado actualizado y cliente notificado, o cambio rechazado.",t:"Pendiente → Entregado: rechazado. En camino → Entregado: aceptado.",s:[["s","Inicio"],["io","Leer estado actual|y estado pedido"],["d","¿Cambio permitido|en el flujo?","Rechazar|el cambio"],["p","Guardar estado, fecha|y hora"],["io","Notificar al cliente"],["e","Fin"]]}];
+var W=380,CX=150;
+function fc(s){var y=8,o="",h,k,t,pv=null,i,j,L,ln;
+for(i=0;i<s.length;i++){k=s[i][0];t=s[i][1].split("|");h=k=="d"?70:42;
+if(pv!==null)o+='<line x1="'+CX+'" y1="'+pv+'" x2="'+CX+'" y2="'+(y+18)+'" stroke="var(--g)" stroke-width="1.6" marker-end="url(#a)"/>'+(s[i-1][0]=="d"?'<text x="'+(CX+6)+'" y="'+(y+8)+'" font-size="11" fill="var(--o)">Sí</text>':"");
+y+=pv!==null?18:0;
+var top=y,m=y+h/2,sh;
+if(k=="s"||k=="e")sh='<rect x="'+(CX-60)+'" y="'+top+'" width="120" height="'+h+'" rx="21"/>';
+else if(k=="p")sh='<rect x="'+(CX-95)+'" y="'+top+'" width="190" height="'+h+'"/>';
+else if(k=="io")sh='<polygon points="'+(CX-85)+","+(top+h)+" "+(CX-65)+","+top+" "+(CX+95)+","+top+" "+(CX+75)+","+(top+h)+'"/>';
+else sh='<polygon points="'+CX+","+top+" "+(CX+105)+","+m+" "+CX+","+(top+h)+" "+(CX-105)+","+m+'"/>';
+o+='<g fill="var(--card)" stroke="var(--g)" stroke-width="1.6">'+sh+'</g>';
+for(j=0;j<t.length;j++)o+='<text x="'+CX+'" y="'+(m+4+(j-(t.length-1)/2)*14)+'" text-anchor="middle" font-size="12" fill="var(--fg)">'+t[j]+'</text>';
+if(k=="d"){ln=s[i][2].split("|");o+='<line x1="'+(CX+105)+'" y1="'+m+'" x2="266" y2="'+m+'" stroke="var(--o)" stroke-width="1.6" marker-end="url(#b)"/><text x="'+(CX+112)+'" y="'+(m-5)+'" font-size="11" fill="var(--o)">No</text><rect x="268" y="'+(m-20)+'" width="108" height="40" rx="8" fill="var(--card)" stroke="var(--o)" stroke-width="1.6"/>';
+for(j=0;j<ln.length;j++)o+='<text x="322" y="'+(m+4+(j-(ln.length-1)/2)*13)+'" text-anchor="middle" font-size="10.5" fill="var(--fg)">'+ln[j]+'</text>';}
+y+=h;pv=y;}
+return '<svg viewBox="0 0 '+W+" "+(y+10)+'" width="'+W+'" role="img" aria-label="Diagrama de flujo" font-family="system-ui,Arial,sans-serif"><defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0L8,4L0,8z" fill="var(--g)"/></marker><marker id="b" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0L8,4L0,8z" fill="var(--o)"/></marker></defs>'+o+"</svg>";}
+document.getElementById("fx").innerHTML=F.map(function(f){return '<div class="fn"><h3>'+f.n+"</h3><dl><dt>Propósito</dt><dd>"+f.p+"</dd><dt>Entradas</dt><dd>"+f.i+"</dd><dt>Procesamiento</dt><dd>"+f.pr+"</dd><dt>Salidas</dt><dd>"+f.o+"</dd></dl>"+fc(f.s)+"<dl><dt>Caso de prueba</dt><dd>"+f.t+"</dd></dl></div>";}).join("");
+function go(){var h=(location.hash||"#c1").slice(1),ok=false;document.querySelectorAll("section").forEach(function(s){var on=s.id==h;s.classList.toggle("on",on);ok=ok||on;});if(!ok){document.getElementById("c1").classList.add("on");h="c1";}
+document.querySelectorAll("#m a").forEach(function(a){a.classList.toggle("on",a.getAttribute("href")=="#"+h);});window.scrollTo(0,0);}
+addEventListener("hashchange",go);go();
+</script></body></html>
